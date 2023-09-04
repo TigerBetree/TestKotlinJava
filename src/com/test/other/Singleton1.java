@@ -1,4 +1,4 @@
-package com.test.java.other;
+package com.test.other;
 
 public class Singleton1 {
 

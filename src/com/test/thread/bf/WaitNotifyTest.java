@@ -1,4 +1,4 @@
-package com.test.java.thread.bf;
+package com.test.thread.bf;
 
 public class WaitNotifyTest {
 

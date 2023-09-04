@@ -1,4 +1,4 @@
-package com.test.java.thread.bf.demo2;
+package com.test.thread.bf.demo2;
 
 public class Producer extends Thread {
 	// 每次生产的数量

@@ -1,4 +1,4 @@
-package com.test.java.thread.bf;
+package com.test.thread.bf;
 
 import java.util.LinkedList;
 import java.util.Queue;

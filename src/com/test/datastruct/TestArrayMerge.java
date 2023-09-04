@@ -1,4 +1,4 @@
-package com.test.java;
+package com.test.datastruct;
 
 /**
  * 题目：

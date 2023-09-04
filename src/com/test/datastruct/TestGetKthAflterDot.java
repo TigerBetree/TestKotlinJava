@@ -1,9 +1,8 @@
-package com.test.java.alg;
+package com.test.datastruct;
 
-public class Test1 {
+public class TestGetKthAflterDot {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		System.out.println(getKthAflterDot(3, 3, 4));
 		System.out.println(getKthAflterDot(6, 3, 4));

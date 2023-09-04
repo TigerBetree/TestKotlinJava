@@ -1,4 +1,4 @@
-package com.test.java.thread.bf.demo2;
+package com.test.thread.bf.demo2;
 
 import java.util.LinkedList;
 
