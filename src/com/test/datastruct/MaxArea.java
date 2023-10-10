@@ -6,6 +6,7 @@ package com.test.datastruct;
  */
 public class MaxArea {
 
+    // 盛最多水的容器
     public static int maxArea(int[] height) {
         int res = 0;
         int l = 0, r = height.length - 1;

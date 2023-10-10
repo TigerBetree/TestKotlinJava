@@ -135,6 +135,5 @@ public class Write1 {
         int[] n = new int[]{2, 4, 6, 8, 10};
         int target = 11;
         findSum(m, n, target);
-
     }
 }

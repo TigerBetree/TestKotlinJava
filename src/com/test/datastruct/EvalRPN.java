@@ -20,6 +20,7 @@ public class EvalRPN {
         System.out.println(evalRPN(s3));
     }
 
+    // 逆波兰表达式求值
     public static int evalRPN(String[] tokens) {
         if (tokens.length == 0) {
             return 0;

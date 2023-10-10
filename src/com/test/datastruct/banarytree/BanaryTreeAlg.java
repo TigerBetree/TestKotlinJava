@@ -122,7 +122,6 @@ public class BanaryTreeAlg {
 
         System.out.println(isCompleteBinaryTree(r1));
         System.out.println(isCompleteBinaryTreeRec(r1));
-
     }
 
     /**

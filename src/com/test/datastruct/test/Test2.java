@@ -1,4 +1,7 @@
-package com.test.datastruct.link;
+package com.test.datastruct.test;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class Test2 {
 
@@ -61,5 +64,32 @@ public class Test2 {
             }
         }
         return sb.toString();
+    }
+
+    public static int lengthOfLongestSubstring(String s) {
+        HashMap<Character, Integer> map = new HashMap<>();
+        int maxLen = 0;//用于记录最大不重复子串的长度
+        int left = 0;//滑动窗口左指针
+        for (int i = 0; i < s.length(); i++) {
+            if (map.containsKey(s.charAt(i))) {
+                left = Math.max(left, map.get(s.charAt(i)) + 1);
+            }
+            //不管是否更新left，都要更新 s.charAt(i) 的位置！
+            map.put(s.charAt(i), i);
+            maxLen = Math.max(maxLen, i - left + 1);
+        }
+
+        return maxLen;
+    }
+
+    public static int[] twoSum(int[] nums, int target) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            if (map.containsKey(target - nums[i])) {
+                return new int[]{map.get(target - nums[i]), i};
+            }
+            map.put(nums[i], i);
+        }
+        throw new IllegalArgumentException("No two sum solution");
     }
 }

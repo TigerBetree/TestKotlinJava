@@ -237,6 +237,7 @@ public class LinkDemo {
         return curr;
     }
 
+    // 大数相加
     public static ListNode addTwoNumbers2(ListNode l1, ListNode l2) {
         ListNode dummyHead = new ListNode(0);
         if (l1 == null && l2 == null) {

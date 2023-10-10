@@ -11,8 +11,9 @@ public class HuiWenCheck {
         System.out.println(checkHuiWen(str));
     }
 
+    // 验证回文："A man, a plan, a canal: Panama"
     public static boolean checkHuiWen(String s) {
-        if (s == null || s.length() == 0) {
+        if (s == null || s.isEmpty()) {
             return false;
         }
 

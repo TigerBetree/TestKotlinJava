@@ -6,6 +6,7 @@ package com.test.datastruct;
  */
 public class MaxSubArray {
 
+    // 最大子数组和
     public int maxSubArray1(int[] nums) {
         int pre = 0, maxAns = nums[0];
         for (int x : nums) {

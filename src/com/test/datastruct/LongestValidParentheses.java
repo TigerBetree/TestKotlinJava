@@ -43,6 +43,7 @@ public class LongestValidParentheses {
         return res;
     }
 
+    // 最长有效括号：)()())
     public static int longestValidParentheses(String s) {
         int maxans = 0;
         Deque<Integer> stack = new LinkedList<Integer>();

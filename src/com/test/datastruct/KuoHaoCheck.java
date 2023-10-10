@@ -52,11 +52,12 @@ public class KuoHaoCheck {
 //        return stack.isEmpty();
 //    }
 
+    // 括号匹配
     public static boolean isValid(String s) {
         Stack<Character> stack = new Stack<>();
         char[] chars = s.toCharArray();
         for (char aChar : chars) {
-            if (stack.size() == 0) {
+            if (stack.isEmpty()) {
                 stack.push(aChar);
             } else if (isSym(stack.peek(), aChar)) {
                 stack.pop();
@@ -64,7 +65,7 @@ public class KuoHaoCheck {
                 stack.push(aChar);
             }
         }
-        return stack.size() == 0;
+        return stack.isEmpty();
     }
 
     private static boolean isSym(char c1, char c2) {
