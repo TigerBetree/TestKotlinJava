@@ -21,10 +21,7 @@ public class Insert5 {
         if (isNegative) {
             numStr = numStr.substring(1);
         }
-        int maxNum = num;
-        if (isNegative) {
-            maxNum = Integer.MIN_VALUE;
-        }
+        int maxNum = Integer.MIN_VALUE;
         // 在每个可能的位置插入 '5'
         for (int i = 0; i <= numStr.length(); i++) {
             // 创建一个新的字符串，将 '5' 插入到位置 i
