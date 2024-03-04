@@ -1,11 +1,8 @@
-<<<<<<<< HEAD:src/com/test/java/datastruct/Test2.java
-package com.test.datastruct.test;
+
+package com.test.java.datastruct.link;
 
 import java.util.HashMap;
 import java.util.Map;
-========
-package com.test.java.datastruct.link;
->>>>>>>> origin/main:src/com/test/java/datastruct/link/Test2.java
 
 public class Test2 {
 
