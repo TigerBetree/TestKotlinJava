@@ -1,8 +1,8 @@
 package com.test.java.datastruct.link;
 
 public class Node {
-    char val;
-    Node next;
+    public char val;
+    public Node next;
 
     Node(char x) {
         val = x;

@@ -9,7 +9,7 @@ public class Demo2 {
 
     /**
      * 合并二叉树
-     * https://leetcode-cn.com/problems/merge-two-binary-trees/solution/he-bing-er-cha-shu-by-leetcode-solution/
+     * <a href="https://leetcode-cn.com/problems/merge-two-binary-trees/solution/he-bing-er-cha-shu-by-leetcode-solution/">...</a>
      *
      * @param t1
      * @param t2
@@ -30,15 +30,16 @@ public class Demo2 {
 
     /**
      * 判断路径和是否等于一个数
-     *
-     * @param root
-     * @param sum
-     * @return
      */
     public boolean hasPathSum(TreeNode root, int sum) {
-        if (root == null) return false;
-        if (root.left == null && root.right == null && root.val == sum) return true;
-        return hasPathSum(root.left, sum - root.val) || hasPathSum(root.right, sum - root.val);
+        if (root == null) {
+            return false;
+        }
+        if (root.left == null && root.right == null && root.val == sum) {
+            return true;
+        }
+        return hasPathSum(root.left, sum - root.val)
+                || hasPathSum(root.right, sum - root.val);
     }
 
     /**
@@ -69,9 +70,6 @@ public class Demo2 {
 
     /**
      * 二叉树的最小深度
-     *
-     * @param root
-     * @return
      */
     public int minDepth(TreeNode root) {
         if (root == null) {
@@ -108,8 +106,6 @@ public class Demo2 {
 
     /**
      * 一棵树每层节点的平均数【基于层序遍历】
-     * @param root
-     * @return
      */
     public List<Double> averageOfLevels(TreeNode root) {
         List<Double> ret = new ArrayList<>();
@@ -132,8 +128,6 @@ public class Demo2 {
 
     /**
      * 得到左下角的节点
-     * @param root
-     * @return
      */
     public int findBottomLeftValue(TreeNode root) {
         Queue<TreeNode> queue = new LinkedList<>();

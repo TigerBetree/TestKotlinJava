@@ -14,9 +14,13 @@ public class Insert5 {
         System.out.println(insertFive(0));
     }
 
+    /**
+     * 给定一个数字，在数字的任意位置插入一个5，使得插入后的这个数字最大。
+     * 输入:  a = 234
+     * 输出: 5234
+     */
     public static int insertFive(int num) {
         boolean isNegative = num < 0;
-        // write your code here
         String numStr = String.valueOf(num);
         if (isNegative) {
             numStr = numStr.substring(1);

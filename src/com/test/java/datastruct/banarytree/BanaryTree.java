@@ -6,9 +6,6 @@ public class BanaryTree {
 
     /**
      * 二叉树的深度
-     *
-     * @param root
-     * @return
      */
     public int maxDepth(TreeNode root) {
         if (root == null) {
@@ -21,23 +18,18 @@ public class BanaryTree {
 
     /**
      * 翻转二叉树
-     *
-     * @param root
-     * @return
      */
-    public TreeNode invertTree(TreeNode root) {
+    public void reverseTree(TreeNode root) {
         if (root == null) {
-            return null;
+            return;
         }
 
         TreeNode temp = root.left;
         root.left = root.right;
         root.right = temp;
 
-        invertTree(root.left);
-        invertTree(root.right);
-
-        return root;
+        reverseTree(root.left);
+        reverseTree(root.right);
     }
 
 
@@ -102,6 +94,9 @@ public class BanaryTree {
         trace(root.right, level + 1);
     }
 
+    /**
+     * 是否是对称的
+     */
     public boolean isSymmetric2(TreeNode root) {
         if (root == null) return true;
         return isSymmetric(root.left, root.right);
@@ -113,6 +108,7 @@ public class BanaryTree {
         if (t1.val != t2.val) return false;
         return isSymmetric(t1.left, t2.right) && isSymmetric(t1.right, t2.left);
     }
+
     // ---------------------------------------------------------------------
 
     public List<Integer> inorderTraversal(TreeNode root) {

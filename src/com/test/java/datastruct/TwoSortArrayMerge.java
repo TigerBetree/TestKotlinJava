@@ -43,6 +43,9 @@ public class TwoSortArrayMerge {
         }
     }
 
+    /**
+     * 实现两个有序数组合并为一个有序数组
+     */
     public static int[] merge(int[] a, int[] b) {
         if (a == null && b == null) {
             return null;

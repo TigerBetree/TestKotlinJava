@@ -8,7 +8,7 @@ import java.util.*;
  * 1. 求二叉树中的节点个数: getNodeNumRec（递归），getNodeNum（迭代）
  * 2. 求二叉树的深度: getDepthRec（递归），getDepth
  * 3. 前序遍历，中序遍历，后序遍历: preorderTraversalRec, preorderTraversal, inorderTraversalRec, postorderTraversalRec
- * (https://en.wikipedia.org/wiki/Tree_traversal#Pre-order_2)
+ * (<a href="https://en.wikipedia.org/wiki/Tree_traversal#Pre-order_2">...</a>)
  * 4. 分层遍历二叉树（按层次从上往下，从左往右）: levelTraversal, levelTraversalRec（递归解法！）
  * 5. 将二叉查找树变为有序的双向链表: convertBST2DLLRec, convertBST2DLL
  * 6. 求二叉树第K层的节点个数：getNodeNumKthLevelRec, getNodeNumKthLevel
@@ -235,7 +235,7 @@ public class BanaryTreeAlg {
 
     /**
      * 前序遍历迭代解法：用一个辅助stack，总是把右孩子放进栈
-     * http://www.youtube.com/watch?v=uPTCbdHSFg4
+     * <a href="http://www.youtube.com/watch?v=uPTCbdHSFg4">...</a>
      */
     public static void preorderTraversal(TreeNode root) {
         if (root == null) {
@@ -276,10 +276,10 @@ public class BanaryTreeAlg {
     /**
      * 中序遍历迭代解法 ，用栈先把根节点的所有左孩子都添加到栈内，
      * 然后输出栈顶元素，再处理栈顶元素的右子树
-     * http://www.youtube.com/watch?v=50v1sJkjxoc
+     * <a href="http://www.youtube.com/watch?v=50v1sJkjxoc">...</a>
      * <p>
-     * 还有一种方法能不用递归和栈，基于线索二叉树的方法，较麻烦以后补上
-     * http://www.geeksforgeeks.org/inorder-tree-traversal-without-recursion-and-without-stack/
+     * 还有一种方法能不用递归和栈，基于线索二叉树的<a href="方法，较麻烦以后补上
+     ">* http://www.geeksforgeeks.org/inorder-tree-traversal-without-recursion-</a>and-without-stack/
      */
     public static void inorderTraversal(TreeNode root) {
         if (root == null) {
@@ -349,15 +349,15 @@ public class BanaryTreeAlg {
 
     /**
      * 后序遍历迭代解法
-     * http://www.youtube.com/watch?v=hv-mJUs5mvU
+     * <a href="http://www.youtube.com/watch?v=hv-mJUs5mvU">...</a>
      */
     public static void postorderTraversal(TreeNode root) {
         if (root == null) {
             return;
         }
 
-        Stack<TreeNode> s = new Stack<TreeNode>();        // 第一个stack用于添加node和它的左右孩子
-        Stack<TreeNode> output = new Stack<TreeNode>();// 第二个stack用于翻转第一个stack输出
+        Stack<TreeNode> s = new Stack<>();        // 第一个stack用于添加node和它的左右孩子
+        Stack<TreeNode> output = new Stack<>();// 第二个stack用于翻转第一个stack输出
 
         s.push(root);
         while (!s.isEmpty()) {        // 确保所有元素都被翻转转移到第二个stack
@@ -379,7 +379,7 @@ public class BanaryTreeAlg {
 
     /**
      * 双栈法的简化——使用Deque
-     * https://www.jianshu.com/p/eb6f4de6efbd
+     * <a href="https://www.jianshu.com/p/eb6f4de6efbd">...</a>
      */
     public static List<Integer> postorderTraversal2(TreeNode root) {
         LinkedList<Integer> result = new LinkedList<>();

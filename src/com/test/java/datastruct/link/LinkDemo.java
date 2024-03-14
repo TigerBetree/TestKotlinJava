@@ -11,7 +11,6 @@ public class LinkDemo {
      * TODO 比较难理解
      *
      * @param head
-     * @return
      */
     public static Node reverse(Node head) {
         if (head == null || head.next == null) {
