@@ -5,9 +5,9 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * https://leetcode-cn.com/problems/3sum/
+ * <a href="https://leetcode-cn.com/problems/3sum/">...</a>
  * <p>
- * https://github.com/hanggegreat/CS-Tree/blob/master/%E7%AE%97%E6%B3%95/leetcode-TOP100.md#15%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C
+ * <a href="https://github.com/hanggegreat/CS-Tree/blob/master/%E7%AE%97%E6%B3%95/leetcode-TOP100.md#15%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C">...</a>
  */
 public class ThreeSum {
 

@@ -9,10 +9,33 @@ public class MinNumTest {
         System.out.println(hammingWeight(6));
 
         int[] nums = new int[]{1, 2, 3, 4};
-        System.out.println(Arrays.toString(exchange(nums)));
+        System.out.println(Arrays.toString(exchange2(nums)));
     }
 
-    public static int[] exchange(int[] nums) {
+    public int[] exchange(int[] nums) {
+        if (nums.length <= 1) {
+            return nums;
+        }
+        int l = 0;
+        int r = nums.length - 1;
+        while (l < r) {
+            if (nums[l] % 2 == 0 && nums[r] % 2 == 1) {
+                int temp = nums[l];
+                nums[l] = nums[r];
+                nums[r] = temp;
+            } else {
+                if (nums[l] % 2 == 1) {
+                    l++;
+                }
+                if (nums[r] % 2 == 0) {
+                    r--;
+                }
+            }
+        }
+        return nums;
+    }
+
+    public static int[] exchange2(int[] nums) {
         if (nums.length <= 1) {
             return nums;
         }

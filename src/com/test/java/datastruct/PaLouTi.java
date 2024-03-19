@@ -10,7 +10,6 @@ public class PaLouTi {
     }
 
     public int climbStairs(int n) {
-//        return helper(n);
         if (n <= 2) {
             return n;
         }

@@ -1,4 +1,4 @@
-package com.test.java;
+package com.test.java.datastruct;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;
@@ -34,7 +34,7 @@ public class FindKthDemo {
 
 
     /**
-     * 利用大顶堆，返回数组中第K大的数
+     * 利用小顶堆，返回数组中第K大的数
      * @param nums
      * @param k
      * @return

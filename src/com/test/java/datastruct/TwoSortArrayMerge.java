@@ -43,13 +43,11 @@ public class TwoSortArrayMerge {
         }
     }
 
+
     /**
      * 实现两个有序数组合并为一个有序数组
      */
     public static int[] merge(int[] a, int[] b) {
-        if (a == null && b == null) {
-            return null;
-        }
         if (a == null) {
             return b;
         } else if (b == null) {
@@ -79,4 +77,35 @@ public class TwoSortArrayMerge {
 
         return m;
     }
+
+    //    public static int[] merge2(int[] m, int[] n) {
+//        if (m == null) {
+//            return n;
+//        }
+//        if (n == null) {
+//            return m;
+//        }
+//
+//        int len = m.length + n.length;
+//        int[] result = new int[len];
+//
+//        int mIndex = 0;
+//        int nIndex = 0;
+//        for (int i = 0; i < len; i++) {
+//            if (mIndex < m.length && nIndex < n.length) {
+//                if (m[mIndex] < n[nIndex]) {
+//                    result[i] = m[mIndex++];
+//                } else {
+//                    result[i] = n[nIndex++];
+//                }
+//            } else {
+//                if (mIndex < m.length) {
+//                    result[i] = m[mIndex++];
+//                } else {
+//                    result[i] = n[nIndex++];
+//                }
+//            }
+//        }
+//        return result;
+//    }
 }

@@ -1,4 +1,4 @@
-package com.test.java;
+package com.test.java.test;
 
 import com.test.java.datastruct.link.ListNode;
 
@@ -54,6 +54,22 @@ public class Test2 {
         return new int[]{};
     }
 
+
+    public static int[] twoSum2(int[] nums, int target) {
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            int temp = target - nums[i];
+            if (map.containsKey(temp)) {
+                return new int[]{map.get(temp), i};
+            }
+
+            map.put(nums[i], i);
+        }
+
+        return new int[]{};
+    }
+
+
     public boolean isValid(String s) {
         Stack<Character> stack = new Stack<>();
         for (int i = 0; i < s.length(); i++) {
@@ -77,6 +93,32 @@ public class Test2 {
                 || (c1 == '[' && c2 == ']');
     }
 
+
+    public boolean isValid2(String s) {
+        if (s == null || s.isEmpty()) {
+            return false;
+        }
+
+        Stack<Character> stack = new Stack<>();
+        int i = 0;
+        while (i < s.length()) {
+            char cur = s.charAt(i);
+            if (stack.isEmpty()) {
+                stack.push(cur);
+            } else {
+                char top = stack.peek();
+                if (top == cur) {
+                    stack.pop();
+                } else {
+                    stack.push(cur);
+                }
+            }
+            i++;
+        }
+
+        return stack.isEmpty();
+    }
+
     public ListNode reverseLink(ListNode head) {
         if (head == null || head.next == null) {
             return head;
@@ -93,6 +135,28 @@ public class Test2 {
 
             cur = temp;
         }
+        return reverseHead;
+    }
+
+
+    private ListNode reverseLink2(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+
+
+        ListNode cur = head;
+        ListNode next = null;
+        ListNode reverseHead = null;
+        while (cur != null) {
+            next = cur.next;
+
+            cur.next = reverseHead;
+            reverseHead = cur;
+
+            cur = next;
+        }
+
         return reverseHead;
     }
 }

@@ -1,4 +1,4 @@
-package com.test.java.other;
+package com.test.java.test;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

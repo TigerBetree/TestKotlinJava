@@ -2,7 +2,7 @@ package com.test.java.datastruct;
 
 /**
  * 最大子数组和
- * https://leetcode-cn.com/problems/maximum-subarray/solution/zui-da-zi-xu-he-by-leetcode-solution/
+ * <a href="https://leetcode-cn.com/problems/maximum-subarray/solution/zui-da-zi-xu-he-by-leetcode-solution/">...</a>
  */
 public class MaxSubArray {
 
