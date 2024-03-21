@@ -310,7 +310,7 @@ public class BanaryTreeAlg {
      * <p>
      * 消灭左子树：左->根->右 => 根->右
      * <p>
-     * https://www.jianshu.com/p/eb6f4de6efbd
+     * <a href="https://www.jianshu.com/p/eb6f4de6efbd">...</a>
      */
     public static List<Integer> inorderTraversal2(TreeNode root) {
         List<Integer> result = new LinkedList<>();
@@ -430,7 +430,7 @@ public class BanaryTreeAlg {
      * 大的ArrayList的size和level有关系
      * <p>
      * 这是我目前见到的最好的递归解法！
-     * http://discuss.leetcode.com/questions/49/binary-tree-level-order-traversal#answer-container-2543
+     * <a href="http://discuss.leetcode.com/questions/49/binary-tree-level-order-traversal#answer-container-2543">...</a>
      */
     public static void levelTraversalRec(TreeNode root) {
         ArrayList<ArrayList<Integer>> ret = new ArrayList<ArrayList<Integer>>();
@@ -971,7 +971,7 @@ public class BanaryTreeAlg {
      * 要么是左子树节点中到根节点的最大距离+右子树节点中到根节点的最大距离，
      * 同时记录左子树和右子树节点中到根节点的最大距离。
      * <p>
-     * http://www.cnblogs.com/miloyip/archive/2010/02/25/1673114.html
+     * <a href="http://www.cnblogs.com/miloyip/archive/2010/02/25/1673114.html">...</a>
      * <p>
      * 计算一个二叉树的最大距离有两个情况:
      * <p>
@@ -1012,7 +1012,7 @@ public class BanaryTreeAlg {
     /**
      * 13. 由前序遍历序列和中序遍历序列重建二叉树（递归）
      * 感觉这篇是讲的最为清晰的:
-     * http://crackinterviewtoday.wordpress.com/2010/03/15/rebuild-a-binary-tree-from-inorder-and-preorder-traversals/
+     * <a href="http://crackinterviewtoday.wordpress.com/2010/03/15/rebuild-a-binary-tree-from-inorder-and-preorder-traversals/">...</a>
      * 文中还提到一种避免开额外空间的方法，等下次补上
      */
     public static TreeNode rebuildBinaryTreeRec(List<Integer> preOrder, List<Integer> inOrder) {
@@ -1090,7 +1090,7 @@ public class BanaryTreeAlg {
 
     /**
      * 14.  判断二叉树是不是完全二叉树（递归）
-     * http://stackoverflow.com/questions/1442674/how-to-determine-whether-a-binary-tree-is-complete
+     * <a href="http://stackoverflow.com/questions/1442674/how-to-determine-whether-a-binary-tree-is-complete">...</a>
      */
     public static boolean isCompleteBinaryTreeRec(TreeNode root) {
 //		Pair notComplete = new Pair(-1, false);

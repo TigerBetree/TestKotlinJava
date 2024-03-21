@@ -4,8 +4,6 @@ public class Test3 {
 
     /**
      * 链表反转
-     * @param head
-     * @return
      */
     public static ListNode reverseList(ListNode head){
         if(head == null || head.next == null){
@@ -18,8 +16,10 @@ public class Test3 {
 
         while(cur != null){
             next = cur.next;
+
             cur.next = reverseHead;
             reverseHead = cur;
+
             cur = next;
         }
 

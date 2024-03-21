@@ -2,8 +2,7 @@ package com.test.java.datastruct;
 
 /**
  * 验证回文
- *
- * https://leetcode-cn.com/problems/valid-palindrome/submissions/
+ * <a href="https://leetcode-cn.com/problems/valid-palindrome/submissions/">...</a>
  */
 public class HuiWenCheck {
     public static void main(String[] s) {

@@ -55,7 +55,7 @@ public class Demo2 {
     }
 
     /**
-     * 是否是相等的数
+     * 是否是相等的树
      *
      * @param s
      * @param t

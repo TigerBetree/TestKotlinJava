@@ -35,8 +35,6 @@ public class BanaryTree {
 
     /**
      * 层序遍历
-     *
-     * @param root
      */
     public void bfs(TreeNode root) {
         Queue<TreeNode> queue = new ArrayDeque<>();
@@ -60,9 +58,6 @@ public class BanaryTree {
 
     /**
      * 是否是对称的
-     *
-     * @param root
-     * @return
      */
     public boolean isSymmetric(TreeNode root) {
         if (root == null) {

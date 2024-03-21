@@ -3,7 +3,7 @@ package com.test.java.datastruct;
 import java.util.HashMap;
 
 /**
- * https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/solution/hua-dong-chuang-kou-by-powcai/
+ * <a href="https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/solution/hua-dong-chuang-kou-by-powcai/">...</a>
  * <p>
  * <p>
  * start不动，end向后移动
@@ -45,7 +45,7 @@ public class LongestSubstring {
     }
 
     public int lengthOfLongestSubstring2(String s) {
-        if (s == null || s.length() == 0) {
+        if (s == null || s.isEmpty()) {
             return 0;
         }
 
