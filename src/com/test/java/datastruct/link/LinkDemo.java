@@ -115,6 +115,38 @@ public class LinkDemo {
         return false;
     }
 
+    /**
+     * 环形链表的起点
+     * 如果链表中含有环，如何计算这个环的起点？
+     */
+    // 环形链表的起点
+    public ListNode detectCycle(ListNode head) {
+        ListNode fast, slow;
+        fast = slow = head;
+        while (fast != null && fast.next != null) {
+            fast = fast.next.next;
+            slow = slow.next;
+            if (fast == slow) {
+                break;
+            }
+        }
+        // 上面的代码类似 hasCycle 函数
+        if (fast == null || fast.next == null) {
+            // fast 遇到空指针说明没有环
+            return null;
+        }
+
+        // 重新指向头结点
+        slow = head;
+
+        // 快慢指针同步前进，相交点就是环起点
+        while (slow != fast) {
+            fast = fast.next;
+            slow = slow.next;
+        }
+        return slow;
+    }
+
     // 两个有序的链表合并
     public static Node merge(Node head1, Node head2) {
         Node guard = new Node('/');
@@ -148,6 +180,7 @@ public class LinkDemo {
 
     /**
      * 从有序链表中删除重复节点
+     *
      * @param head
      * @return
      */
@@ -157,8 +190,28 @@ public class LinkDemo {
         return head.val == head.next.val ? head.next : head;
     }
 
+    // 原地删除排序链表中的重复项
+    public ListNode deleteDuplicates2(ListNode head) {
+        if (head == null) return null;
+        ListNode slow = head, fast = head;
+        while (fast != null) {
+            if (fast.val != slow.val) {
+                // nums[slow] = nums[fast];
+                slow.next = fast;
+                // slow++;
+                slow = slow.next;
+            }
+            // fast++
+            fast = fast.next;
+        }
+        // 断开与后面重复元素的连接
+        slow.next = null;
+        return head;
+    }
+
     /**
      * 交换链表中的相邻结点
+     *
      * @param head
      * @return
      */

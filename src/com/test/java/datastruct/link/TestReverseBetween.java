@@ -22,33 +22,38 @@ public class TestReverseBetween {
     }
 
     public static ListNode reverseBetween(ListNode head, int m, int n) {
+        // 创建一个哑节点，它的next指向head，这样便于处理
         ListNode dump = new ListNode(-1);
         dump.next = head;
 
         ListNode pre = dump;
         ListNode start = head;
 
+        // 将pre移动到需要反转部分的前一个节点
         for (int i = 1; i < m; i++) {
             pre = pre.next;
             start = start.next;
         }
 
+        // 保存待反转部分的起始节点，即反转后的尾节点
         ListNode reverseSubEnd = start;
 
-        ListNode cur = start;
+        // 局部链表反转,反转从m到n的链表部分
+        ListNode current = start;
         ListNode reverseSubHead = null;
         ListNode next = null;
         for (int i = m; i <= n; i++) {
-            next = cur.next;
+            next = current.next;
 
-            cur.next = reverseSubHead;
-            reverseSubHead = cur;
+            current.next = reverseSubHead;
+            reverseSubHead = current;
 
-            cur = next;
+            current = next;
         }
 
+        // 将反转后的链表与原链表连接
         pre.next = reverseSubHead;
-        reverseSubEnd.next = cur;
+        reverseSubEnd.next = current;
 
         return dump.next;
     }
