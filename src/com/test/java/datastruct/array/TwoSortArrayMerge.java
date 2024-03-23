@@ -1,4 +1,4 @@
-package com.test.java.datastruct;
+package com.test.java.datastruct.array;
 
 import java.util.Arrays;
 

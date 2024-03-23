@@ -1,4 +1,4 @@
-package com.test.java.datastruct;
+package com.test.java.datastruct.stackqueue;
 
 import java.util.Stack;
 
