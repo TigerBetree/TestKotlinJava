@@ -31,7 +31,7 @@ object Test {
         println(getValueByNameFromUrl(s5, "school"))
     }
 
-    fun getValueByNameFromUrl(url: String, name: String): String {
+    private fun getValueByNameFromUrl(url: String, name: String): String {
         return try {
             var result = ""
             val index = url.indexOf("?") // 字符串中第一个 '?' 开始index

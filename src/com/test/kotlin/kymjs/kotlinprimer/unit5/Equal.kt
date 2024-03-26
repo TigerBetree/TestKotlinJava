@@ -4,7 +4,7 @@
 // * Created by ZhangTao on 18/7/7.
 // */
 //
-//fun com.test.kotlin.test1.test1.com.test.kotlin.test1.main(s: Array<String>) {
+//fun com.test.kotlin.test1.test1.com.test.kotlin.test1.com.test.kotlin.temp.main(s: Array<String>) {
 //
 //    val string = "string"
 ////    val javaString = String("string")
