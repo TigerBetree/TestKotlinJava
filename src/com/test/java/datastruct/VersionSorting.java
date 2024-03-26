@@ -20,10 +20,31 @@ public class VersionSorting {
 //        System.out.println(Arrays.toString(versions));
 
         System.out.println(Arrays.toString(sortVersions(versions)));
-        System.out.println(Arrays.toString(sortVersions2(versions)));
+        System.out.println(Arrays.toString(sortVersions1(versions)));
     }
 
     public static String[] sortVersions(String[] versions) {
+        Arrays.sort(versions, new Comparator<String>() {
+            @Override
+            public int compare(String s1, String s2) {
+                String[] arr1 = s1.split("\\.");
+                String[] arr2 = s2.split("\\.");
+                int i = 0;
+                while (i < arr1.length && i < arr2.length) {
+                    int n1 = Integer.parseInt(arr1[i]);
+                    int n2 = Integer.parseInt(arr2[i]);
+                    if (n1 != n2) {
+                        return n1 - n2;
+                    }
+                    i++;
+                }
+                return arr1.length - arr2.length;
+            }
+        });
+        return versions;
+    }
+
+    public static String[] sortVersions1(String[] versions) {
         Arrays.sort(versions, new Comparator<String>() {
             @Override
             public int compare(String v1, String v2) {
@@ -74,27 +95,6 @@ public class VersionSorting {
                 return Integer.compare(arr1.length, arr2.length);
             }
         }
-    }
-
-    public static String[] sortVersions2(String[] versions) {
-        Arrays.sort(versions, new Comparator<String>() {
-            @Override
-            public int compare(String s1, String s2) {
-                String[] arr1 = s1.split("\\.");
-                String[] arr2 = s2.split("\\.");
-                int i = 0;
-                while (i < arr1.length && i < arr2.length) {
-                    int n1 = Integer.parseInt(arr1[i]);
-                    int n2 = Integer.parseInt(arr2[i]);
-                    if (n1 != n2) {
-                        return n1 - n2;
-                    }
-                    i++;
-                }
-                return arr1.length - arr2.length;
-            }
-        });
-        return versions;
     }
 
     public static String[] sortVersions3(String[] versions) {
