@@ -1,11 +1,27 @@
 package com.test.java.test;
 
+/**
+ * 最大子数组和
+ */
 public class TestMaxSubArraySum {
 
     public static void main(String[] args) {
         int[] nums = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
-        System.out.println("1. 最大子数组和为: " + maxSubArraySum(nums));
-        System.out.println("2. 最大子数组和为: " + maxSubArraySum2(nums));
+        System.out.println("1. 最大子数组和为: " + maxSubArray(nums));
+        System.out.println("2. 最大子数组和为: " + maxSubArraySum(nums));
+        System.out.println("3. 最大子数组和为: " + maxSubArraySum2(nums));
+    }
+
+    /**
+     * 最大子数组和
+     */
+    public static int maxSubArray(int[] data) {
+        int ans = data[0], pre = 0;
+        for (int x : data) {
+            pre = Math.max(pre + x, x);
+            ans = Math.max(ans, pre);
+        }
+        return ans;
     }
 
     public static int maxSubArraySum(int[] array) {

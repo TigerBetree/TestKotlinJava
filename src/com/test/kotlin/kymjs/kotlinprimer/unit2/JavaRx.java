@@ -11,7 +11,7 @@
 // * Created by ZhangTao on 18/7/1.
 // */
 //public class JavaRx {
-//    public static void com.test.kotlin.test1.test1.com.test.kotlin.test1.main(String[] args) {
+//    public static void com.test.kotlin.test1.test1.com.test.kotlin.test1.com.test.kotlin.temp.main(String[] args) {
 //        final String[] a = new String[]{"4", "0", "7", "i", "f", "w", "0", "9"};
 //        final Integer[] index = new Integer[]{5, 3, 9, 4, 8, 3, 1, 9, 2, 1, 7};
 //

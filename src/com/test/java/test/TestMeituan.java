@@ -2,6 +2,9 @@ package com.test.java.test;
 
 import java.util.ArrayList;
 
+/**
+ * 美团面试题
+ */
 public class TestMeituan {
 
     public static void main(String[] args) {
@@ -29,7 +32,7 @@ public class TestMeituan {
         float price;
         int youhuiId;// 101, 102
 
-        public CP(String name, float price, int youhuiId){
+        public CP(String name, float price, int youhuiId) {
             this.name = name;
             this.price = price;
             this.youhuiId = youhuiId;
@@ -40,20 +43,20 @@ public class TestMeituan {
         int id;
         int discount;
 
-        public Youhui(int id, int discount){
+        public Youhui(int id, int discount) {
             this.id = id;
             this.discount = discount;
         }
     }
 
-    public static float count(ArrayList<CP> cpList, ArrayList<Youhui> youhuiList, float discount){
-        if(cpList.isEmpty()){
+    public static float count(ArrayList<CP> cpList, ArrayList<Youhui> youhuiList, float discount) {
+        if (cpList.isEmpty()) {
             return 0;
         }
 
         float totleMoney = 0l;
 
-        for(int i = 0; i < cpList.size(); i++){
+        for (int i = 0; i < cpList.size(); i++) {
             CP cp = cpList.get(i);
             totleMoney += getPriceAfterYouhui(cp, youhuiList);
         }
@@ -62,13 +65,13 @@ public class TestMeituan {
     }
 
     public static float getPriceAfterYouhui(CP cp, ArrayList<Youhui> youhuiList) {
-        if(youhuiList.isEmpty()){
+        if (youhuiList.isEmpty()) {
             return cp.price;
         }
 
-        for(int i = 0; i < youhuiList.size(); i++){
+        for (int i = 0; i < youhuiList.size(); i++) {
             Youhui youhui = youhuiList.get(i);
-            if(cp.youhuiId == youhui.id){
+            if (cp.youhuiId == youhui.id) {
                 return cp.price - youhui.discount;
             }
         }

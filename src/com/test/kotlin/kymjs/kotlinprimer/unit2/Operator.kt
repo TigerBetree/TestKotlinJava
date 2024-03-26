@@ -4,7 +4,7 @@
 // * Created by ZhangTao on 18/7/1.
 // */
 //
-//fun com.test.kotlin.test1.test1.com.test.kotlin.test1.main(args: Array<String>) {
+//fun com.test.kotlin.test1.test1.com.test.kotlin.test1.com.test.kotlin.temp.main(args: Array<String>) {
 ////    val a = arrayOf("4", "0", "7", "i", "f", "w", "0", "9")
 ////    val index = arrayOf(5, 3, 9, 4, 8, 3, 1, 9, 2, 1, 7)
 ////

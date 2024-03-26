@@ -32,6 +32,6 @@
 //        } else {
 //            CompareResult.EQUAL
 //        }
-//fun com.test.kotlin.test1.test1.com.test.kotlin.test1.main(args: Array<String>) {
+//fun com.test.kotlin.test1.test1.com.test.kotlin.test1.com.test.kotlin.temp.main(args: Array<String>) {
 //    println(5.vs(6))
 //}

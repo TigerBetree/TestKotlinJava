@@ -3,7 +3,7 @@
 ///**
 // * Created by ZhangTao on 18/7/1.
 // */
-//fun com.test.kotlin.test1.test1.com.test.kotlin.test1.main(args: Array<String>) {
+//fun com.test.kotlin.test1.test1.com.test.kotlin.test1.com.test.kotlin.temp.main(args: Array<String>) {
 //    for (i in 1..10) {
 //        println(i)
 //    }

@@ -6,7 +6,7 @@ package com.test.kotlin.temp
 
 fun main(args: Array<String>) {
     for (i in 1..100 step 20) {
-        print("$i " + "str")
+        print("$i str")
     }
 
     for (i in 1.rangeTo(100) step 20) {

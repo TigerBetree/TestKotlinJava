@@ -19,6 +19,22 @@ public class TrappingRainWater {
     }
 
     public static int trap(int[] height) {
+        int res = 0;
+        int lMax = 0, rMax = 0;
+        int l = 0, r = height.length - 1;
+        while (l < r) {
+            lMax = Math.max(lMax, height[l]);
+            rMax = Math.max(rMax, height[r]);
+            if (lMax < rMax) {
+                res += lMax - height[l++];
+            } else {
+                res += rMax - height[r--];
+            }
+        }
+        return res;
+    }
+
+    public static int trap2(int[] height) {
         if (height == null || height.length == 0) {
             return 0;
         }
@@ -41,22 +57,6 @@ public class TrappingRainWater {
             }
         }
         return result;
-    }
-
-    public static int trap2(int[] height) {
-        int res = 0;
-        int lMax = 0, rMax = 0;
-        int l = 0, r = height.length - 1;
-        while (l < r) {
-            lMax = Math.max(lMax, height[l]);
-            rMax = Math.max(rMax, height[r]);
-            if (lMax < rMax) {
-                res += lMax - height[l++];
-            } else {
-                res += rMax - height[r--];
-            }
-        }
-        return res;
     }
 
 //    public static int writeTrap(int[] height) {
