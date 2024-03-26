@@ -1,5 +1,5 @@
 
-package com.test.java.datastruct.link;
+package com.test.java.datastruct;
 
 import java.util.HashMap;
 import java.util.Map;
