@@ -1,4 +1,4 @@
-package com.test.java.test;
+package com.test.java.datastruct;
 
 /**
  * 最大子数组和

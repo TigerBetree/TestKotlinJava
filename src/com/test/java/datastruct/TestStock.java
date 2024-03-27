@@ -1,4 +1,4 @@
-package com.test.java.test;
+package com.test.java.datastruct;
 
 public class TestStock {
 
